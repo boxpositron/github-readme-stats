@@ -66,6 +66,7 @@
         "axios": "^1.7.9",
         "dotenv": "^16.4.7",
         "emoji-name-map": "^1.2.8",
+        "express": "^4.21.2",
         "github-username-regex": "^1.0.0",
         "helmet": "^8.0.0",
         "morgan": "^1.10.0",

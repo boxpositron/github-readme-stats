@@ -20,7 +20,9 @@ if (isProduction) {
 app.use(helmet());
 app.use(isProduction ? morgan("combined") : morgan("dev"));
 
-app.listen(process.env.port || 9000);
+app.listen(process.env.port || 9000, () => {
+  console.log(`Server running on port ${process.env.port || 9000}`);
+});
 
 app.get("/", statsCard);
 app.get("/pin", repoCard);
